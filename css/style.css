@@ -1,0 +1,537 @@
+:root {
+    --main-color: #1C1C1C;
+    --head-font: 'Montserrat', sans-serif;
+    --main-font: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--main-font);
+    
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: var(--head-font);
+}
+
+/***************************nav bar*********************/
+
+nav  .nav-item .nav-link {
+   
+    position: relative;
+}
+
+nav .nav-item .nav-link.active::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #111;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    z-index: -1;
+}
+
+/******************home************************/
+
+#home {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: 0px 0px;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+#home .home_layer {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+#home .home_content .home_animation {
+    font-size: 60px;
+    font-weight: 400;
+}
+
+#home  .home_content .home_animation{
+    position: relative;
+}
+#home  .home_content .home_animation::after{
+     font-size: 72px;
+     content:"";
+     animation-name: title;
+     animation-duration: 10s ;
+     animation-iteration-count: infinite;
+}
+
+@keyframes title{
+    0%{content: "L";}
+    2%{content: "|";}
+    4%{content: "L|";}
+    6%{content: "La|";}
+    8%{content: "Lar|";}
+    10%{content: "Larr|";}
+    12%{content: "Larry |";}
+    14%{content: "Larry D|";}
+    16%{content: "Larry Da|";}
+    18%{content: "Larry Dan| ";}
+    20%{content: "Larry Dani|";}
+    22%{content: "Larry Danie|";}
+    24%{content: "Larry Daniels|";}
+    26%{content: "Larry Danie|";}
+    28%{content: "Larry Dani|";}
+    30%{content: "Larry Dan|";}
+    32%{content: "Larry Da|";}
+    34%{content: "Larry D|";}
+    36%{content: "Larry|";}
+    38%{content: "Larr|";}
+    40%{content: "La|";}
+    42%{content: "L|";}
+    44%{content: "|";}
+    46%{content: "De|";}
+    48%{content: "Dev|";}
+    50%{content: "Devolo|";}
+    52%{content: "Devoloper|";}
+    54%{content: "Devolope|";}
+    56%{content: "Devolop|";}
+    58%{content: "Devol|";}
+    60%{content: "Dev|";}
+    62%{content: "De|";}
+    64%{content: "D|";}
+    66%{content: "|";}
+    68%{content: "D|";}
+    70%{content: "Des|";}
+    72%{content: "Desi|";}
+    74%{content: "Desig|";}
+    76%{content: "Design|";}
+    78%{content: "Designe|";}
+    80%{content: "Designer|";}
+    82%{content: "Design|";}
+    84%{content: "Desig|";}
+    86%{content: "Desi|";}
+    88%{content: "Desi|";}
+    90%{content: "Des|";}
+    92%{content: "De|";}
+    94%{content: "D|";}
+    96%{content:"|";}
+    98%{content:"";}
+    100%{content: "|";}
+
+}
+
+#home .home_content h1 {
+    font-size: 60px;
+}
+
+#home .home_content .home_icon {
+    font-size: 14px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    margin: 3px;
+}
+
+/******************about************************/
+
+
+#about .about_img {
+    position: relative;
+}
+
+#about .about_img::after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+
+#about .progress {
+    height: 25px;
+    box-shadow: 0px 2px 7px rgb(0 0 0 / 15%) inset;
+    margin: 30px 0;
+}
+
+#about .btn {
+    font-size: 13px !important;
+    padding: 10px 30px;
+}
+
+#about .btn_1:hover {
+    background-color: white !important;
+    color: var(--main-color) !important;
+    border: 1px solid var(--main-color) !important;
+}
+
+/******************services************************/
+
+#services {
+    background-color: #F7F7F7;
+}
+
+#services h2 {
+    position: relative;
+}
+
+#services h2::after {
+    content: "";
+    width: 17%;
+    height: 10px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 469px;
+
+
+}
+
+#services .services_card {
+    margin-top: 30px;
+}
+
+
+
+.services_card:hover .services_icon {
+    background-color: var(--main-color);
+    color: white;
+
+}
+
+.services_icon {
+    width: 70px;
+    height: 70px;
+    background-color: #F7F7F7;
+    border-radius: 50%;
+    font-size: 24px;
+    transition: all 0.5s;
+
+}
+
+/******************portfolio************************/
+
+#portfolio h2 {
+    position: relative;
+}
+
+#portfolio h2::after {
+    content: "";
+    width: 17%;
+    height: 10px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 469px;
+}
+
+#portfolio .portfolio_tabs .nav-item .nav-link {
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0 15px;
+    background-color: white;
+    position: relative;
+}
+
+#portfolio .portfolio_tabs .nav-item .nav-link.active::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #111;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    z-index: -1;
+}
+
+#portfolio .portfolio_item{
+    position: relative;
+}
+#portfolio .portfolio_item .item_layer{
+    background: rgba(255, 255, 255, 0.95) ;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    bottom: -10px;
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+#portfolio .portfolio_item:hover .item_layer{
+    opacity: 1;
+    top: 5px;
+    bottom: 5px;
+}
+#portfolio .portfolio_item:hover .item_icons{
+    margin-top: 0px;
+}
+#portfolio .portfolio_item .item_icons{
+    margin-top: 30px;
+    transition: all 0.5s;
+}
+#portfolio .portfolio_item .item_icons .icon_item {
+    background-color: #343434;
+    color: white;
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+#portfolio .portfolio_item .item_icons .icon_item:hover{
+   background-color: white;
+   color: #343434;
+   border: 1px solid #343434;
+}
+
+
+/******************Carousel************************/
+
+#Carousel {
+    background-color: #F7F7F7;
+    height: 80vh;
+}
+
+#Carousel h2 {
+    position: relative;
+}
+
+#Carousel h2::after {
+    content: "";
+    width: 17%;
+    height: 10px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 469px;
+
+
+}
+
+#Carousel .carousel_content img {
+    width: 90px;
+    height: 90px;
+}
+
+#Carousel .carousel_content span {
+    font-size: 12px;
+    font-weight: 600;
+
+}
+
+#carousel .carousel-indicators {
+    top: 105%;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 7px;
+    margin-left: 7px;
+    background-color: #869791;
+}
+
+/*///////////////////////counter///////////////*/
+
+#counter {
+
+    height: 50vh;
+    color: #343434;
+
+}
+
+
+
+.counter_icon {
+    width: 80px;
+    height: 80px;
+    font-size: 32px;
+    color: #343434;
+
+}
+
+/*///////////////////////team///////////////*/
+
+#team {
+    background-color: #F7F7F7;
+}
+
+#team h2 {
+    position: relative;
+}
+
+#team h2::after {
+    content: "";
+    width: 17%;
+    height: 10px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 469px;
+}
+
+#team .card .card-body{
+    background-color: #5A5A5A;
+    color: white;
+}
+
+#team .card .card_img{
+    position: relative;
+    overflow: hidden;
+}
+#team .card .card_img img{
+    transition: all 0.5s ;
+}
+
+#team .card:hover .card_layer2{
+    transform: rotateY(360deg);
+    opacity: 1 !important;
+    
+}
+
+#team .card .card_img .card_layer2{
+    background: rgba(255, 255, 255, 0.95) ;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.5s;
+
+}
+
+#team .card .card_img:hover img{
+    transform: scale(1.2 , 1.2);
+}
+
+#team .card .card_img .card_layer2 .layer_icon {
+    background-color: black;
+    color: white;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+#team .card .card_img .card_layer2 .layer_icon:hover{
+   background-color: white;
+   color: black;
+   border: 1px solid black;
+}
+
+/*****************contact*************/
+
+#contact h2 {
+    position: relative;
+}
+
+#contact h2::after {
+    content: "";
+    width: 17%;
+    height: 10px;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 469px;
+}
+
+#contact .contact_item .contact_icon{
+    background-color: #F4F4F4;
+    width: 60px;
+    height: 60px;
+    margin: 5px auto;
+    border-radius: 50%;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+
+}
+
+#contact .contact_item:hover .contact_icon{
+    background-color: var(--main-color);
+    color: #F4F4F4;
+}
+
+#contact .input_box input {
+    background-color: #F4F4F4;
+    border: none;
+    width: 48%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#contact form textarea{
+    width: 100%;
+    background-color: #F4F4F4;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px 0;
+
+}
+
+#contact .btn {
+    font-size: 13px !important;
+    padding: 10px 30px;
+    margin-right: 100%;
+}
+
+#contact .btn:hover {
+    background-color: white !important;
+    color: var(--main-color) !important;
+    border: 1px solid var(--main-color) !important;
+   
+}
+
+/*******************footer************/
+
+#footer{
+    height: 12vh;
+    background-color: var(--main-color);
+    color: #748182;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
